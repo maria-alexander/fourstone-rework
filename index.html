@@ -15,9 +15,12 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!--scroll reveal script-->
+<script src="https://unpkg.com/scrollreveal"></script>
 </head>
 	
-	
+<!--  font awesome-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">	
 	
 <body>
 	<section id="nav">
@@ -43,10 +46,46 @@
 			<div class='row'>
 				<div class='col-lg-8'>
 					<h1 class='big-heading'>We Can Get You There!</h1>
-					<p>FourStone Partners is an innovative consulting firm specializing in Sales Outsourcing, Sales Performance Management, Product Design, and Cost Management Stategies. Our unique approach has relentless focus on Accountability and Practical Application. We are a High Energy, High Intensity, Results Drive organization that fully engages with our clients to drive sales performance, market receptivity, and optimized revenue generation.</p>
+					<p>FourStone Partners is an innovative consulting firm specializing in Sales Outsourcing, Sales Performance Management, Product Design, and Cost Management Stategies. Our unique approach has relentless focus on Accountability and Practical Application. We are a High Energy, High Intensity, Results Drive organization that fully engages with our clients to drive sales performance, market receptivity, and optimized revenue generation.
+					<button type="button" class='btn btn-lg btn-dark download-button'><i class="fab fa-apple"></i> Download</button>
+        			<button type="button" class='btn btn-lg btn-outline-light download-button'><i class="fab fa-google-play"></i> Download</button></p>
 				</div>
 		  </div>
   		</div>
   </section>
+	
+	
+	<!--features-->
+	<section class='white-section' id="features">
+    	<div class='container-fluid'>
+    		<div class='row'>
+				<div class='feature-box col-lg-5'>
+					<div class='feature-container'>
+						<h3>What We Can Do For You</h3>
+						<ul>
+							<li><i class="fas fa-check"></i> Develop Actionable Client Relationships</li>
+							<li><i class="fas fa-check"></i> Significantly condense sales cycles</li>
+							<li><i class="fas fa-check"></i> Accelerate time to revenue for new market entries and products</li>
+							<li><i class="fas fa-check"></i> Deploy Full Potential Plans for key accounts</li>
+							<li><i class="fas fa-check"></i> Deliver new business</li>
+							<li><i class="fas fa-check"></i> Increase revenue from existing clients</li>
+							<li><i class="fas fa-check"></i> Improve sales presentation impact</li>
+							<li><i class="fas fa-check"></i> Drive Total Revenue</li>
+						</ul>
+					</div>
+				</div>
+        		<div class='service-box col-lg-7'> <i class="fas fa-chart-line fa-4x"></i>
+        			<h3>Sales Performance Outsourcing</h3>
+        			<p>Proven sales plans and models customized for your unique needs</p>
+					<i class="fas fa-pen-nib fa-4x"></i>
+        			<h3>Product Design</h3>
+        			<p>Developing products with attractive pricing and design features</p>
+      			</div>
+      		</div>
+  		</div>
+  	</section>
+<script>
+		ScrollReveal().reveal('.feature-container', { easing: 'ease-in', delay: 500 });
+	</script>
 </body>
 </html>
