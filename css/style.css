@@ -1,16 +1,35 @@
+html, body {
+	margin: 0;
+	body: 0;
+}
+
+.row {
+	padding: 0;
+	margin-right: 0;
+}
+
 h1 {
 	color: red;
 }
 
 .container-fluid {
 	padding: 0;
+	margin: 0;
 }
+
+/*navbar*/
+
 .navbar {
 	padding: 20px 50px;
 	-webkit-box-shadow:0px 4px 5px rgba(0,0,0,0.40);
  	-moz-box-shadow:0px 4px 5px rgba(0,0,0,0.40);
  	box-shadow:0px 2px 5px rgba(0,0,0,0.40);
-	
+	background-color: #E3E3E3;
+}
+
+.brand-text {
+	padding-left: 10px;
+	color: #3e5488;
 }
 
 .navbar-brand {
@@ -24,37 +43,51 @@ h1 {
 	color: #3e5488 !important;
 }
 
-.brand-text {
-	margin-left: 10px;
-	color: #3e5488;
-}
+/*section styles*/
 
 .colored-section {
     background-color: #3e5488;
     color: #fff;
 }
+
+/*title section*/
+
 .jumbotron-fluid {
 	background-image: url("../images/jumbotron-lighthouse.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 100vh;
-	
-}
-
-.big-heading {
-    font-size: 3.5rem;
-    line-height: 1.5;
-	padding: 7% 15% 1.5% 15%;
-	color: rgba(255,255,255,0.85);
-	text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.9);
 }
 
 .jumbotron-fluid p {
 	color: #fff;
 	font-size: 1.2 rem;
-	padding: 0 15% 9% 15%;
+	padding: 0 15% 3% 15%;
 }
+
+.big-heading {
+    font-size: 3.5rem;
+    line-height: 1.5;
+	padding: 14% 15% 1.5% 15%;
+	color: rgba(255,255,255,0.85);
+	text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.hero-button:first-of-type {
+	 margin: 0% 2% 15% 15%;
+	 background-color: #3e5488;
+}
+
+.hero-button:first-of-type:hover {
+	 background-color: #253251;
+}
+
+.hero-button:nth-of-type(2) {
+	margin: 0% 0% 15% 0%;
+}
+
+/*features and services*/
 
 .feature-container {
 	border-radius: 0px 0px 50px 50px;
@@ -97,6 +130,52 @@ h1 {
 	color: #ffe37d;
 }
 
-.download-button {
-	 margin: 5% 3% 5% 0;
+
+/*mobile specs*/
+
+@media only screen and (max-width: 1000px) {
+ 	.feature-box {
+    padding: 0;
+	margin: 0;
+  }
+	.feature-box h3 {
+		padding: 5%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	
+	.feature-box ul {
+		text-align: center;
+		padding: 0;
+	}
+ 	.feature-container {
+	box-shadow: none;
+	border-radius: 0;
+	margin: 0;
+	padding: 15px;
+		
+  }
+	
+}
+
+@media only screen and (max-width: 600px) {
+	.big-heading {
+		text-align: center;
+		margin-top: 13%;
+	}
+	.jumbotron-fluid p {
+		display: none;
+	}
+	
+	.hero-button:first-of-type {
+		margin: 5% auto;
+		display: block;
+	}
+	
+	.hero-button:nth-of-type(2) {
+		margin: 0 auto;
+		display: block;
+	}
+	
+	
 }
